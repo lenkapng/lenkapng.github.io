@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title }} | {{ site.title }}</title>
@@ -11,14 +13,19 @@
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
     <div class="sidebar-inner">
       <div class="sidebar-top">
         <div class="logo">Lenka Poledníková</div>
+  
+  <div class="mobile-menu" id="mobileMenu">    
   <nav>
     <a href="/about" class="{% if page.url == '/about/' %}active{% endif %}">O mně</a>
     <a href="/studium" class="{% if page.url == '/studium/' %}active{% endif %}">Studium</a>
     <a href="/" class="{% if page.url == '/' %}active{% endif %}">Blog</a>
   </nav>
+  </div> 
     </div>
 
       <div class="tags-list">
@@ -51,6 +58,14 @@
   NekoType = "blue";
 </script>
 <script src="https://webneko.net/n20171213.js"></script>
+
+
+<script>
+  document.getElementById("hamburger").addEventListener("click", function () {
+    document.getElementById("mobileMenu").classList.toggle("show");
+  });
+</script>
+
 
 </body>
 </html>
