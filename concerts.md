@@ -1,3 +1,9 @@
+---
+layout: default
+title: Navštívené koncerty
+permalink: /concerts/
+---
+
 <style>
   table {
     width: 100%;
