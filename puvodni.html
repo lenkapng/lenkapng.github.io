@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lenka | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9fc;
+      color: #222;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    aside {
+      width: 250px;
+      background-color: #6a5acd;
+      color: white;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    aside img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid white;
+    }
+
+    aside h1 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    nav a {
+      display: block;
+      margin: 0.5rem 0;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #6a5acd;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+    }
+
+    a {
+      color: #6a5acd;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      aside h1 {
+        font-size: 1.2rem;
+        margin: 0 1rem;
+      }
+
+      nav {
+        display: flex;
+        gap: 1rem;
+      }
+
+      nav a {
+        margin: 0;
+      }
+
+      main {
+        padding: 1rem;
+      }
+    }
+
+    .profile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.profile h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+  #projekty {
+    margin-top: 3rem;
+  }
+    .blog-post {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.blog-post:hover {
+  transform: translateY(-4px);
+}
+
+.blog-post h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #6a5acd;
+  font-weight: 600;
+  text-decoration: none;
+}
+  </style>
+
+</head>
+<body>
+  <aside>
+  <div class="profile">
+    <img src="https://via.placeholder.com/60" alt="Profilový obrázek" />
+    <div>
+      <h1>Lenka</h1>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#o-mne">O mně</a>
+    <a href="#projekty">Projekty</a>
+    <a href="#blog">Blog</a>
+  </nav>
+</aside>
+
+
+  <main>
+    <section id="o-mne">
+      <h2>O mně</h2>
+      <p>Ahoj! Jmenuji se Lenka a učím se tvořit webové stránky. Tohle je moje první portfolio postavené pomocí GitHub Pages.</p>
+    </section>
+
+    <section id="projekty">
+      <h2>Projekty</h2>
+
+      <div class="project">
+        <h3>Můj první HTML projekt</h3>
+        <p>Jednoduchá webová stránka s informacemi o mně a kontaktem.</p>
+        <a href="#">Zobrazit projekt</a>
+      </div>
+
+      <div class="project">
+        <h3>Portfolio s CSS</h3>
+        <p>Experimentovala jsem s barvami a rozvržením.</p>
+        <a href="#">Zobrazit projekt</a>
+      </div>
+    </section>
+
+    <section id="blog">
+  <h2>Blog</h2>
+
+  <div class="blog-post">
+    <h3>🗓 2025-06-10 – Začínám s GitHub Pages</h3>
+    <p>Dnes jsem spustila svůj první web pomocí GitHub Pages. Je to jednodušší, než jsem si myslela! Sdílím svůj postup, chyby a tipy.</p>
+    <a href="#">Číst více</a>
+  </div>
+
+  <div class="blog-post">
+    <h3>🗓 2025-06-05 – Základy HTML a CSS</h3>
+    <p>První kroky ve světě frontendu – jak jsem se naučila psát základní HTML značky a zkoušela si styly v CSS.</p>
+    <a href="#">Číst více</a>
+  </div>
+</section>
+
+
+    <footer>
+      © 2025 Lenka. Vytvořeno s ♥ pomocí GitHub Pages.
+    </footer>
+  </main>
+</body>
+</html>

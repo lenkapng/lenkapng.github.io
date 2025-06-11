@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<!-- <h1>Články pro tag: {{ page.tag }}</h1> lze udělat nadpis-->
+
+<div class="post-list">
+  {% assign tagname = page.tag %}
+  {% for post in site.posts %}
+    {% if post.tags contains tagname %}
+      <div class="post-preview">
+        <img src="{{ post.image }}" alt="náhled" />
+        <div>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.excerpt }}</p>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

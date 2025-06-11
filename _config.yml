@@ -1,0 +1,14 @@
+title: Lenka
+description: Můj blog o učení webdesignu
+author: Lenka
+theme: minima
+
+# Vlastní CSS
+sass:
+  style: compressed
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default

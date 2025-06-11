@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-top">
+        <div class="logo">Lenka Poledníková</div>
+  <nav>
+    <a href="/about" class="{% if page.url == '/about/' %}active{% endif %}">O mně</a>
+    <a href="/studium" class="{% if page.url == '/studium/' %}active{% endif %}">Studium</a>
+    <a href="/" class="{% if page.url == '/' %}active{% endif %}">Blog</a>
+  </nav>
+    </div>
+
+      <div class="tags-list">
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag in sorted_tags %}
+          {% assign tag_name = tag[0] %}
+          {% assign tag_count = tag[1].size %}
+        {% assign current_url = page.url %}
+<a href="/tags/{{ tag_name | slugify }}/"
+   class="{% if current_url contains '/tags/' and current_url contains tag_name | slugify %}active{% endif %}">
+  #{{ tag_name }} ({{ tag_count }})
+</a>
+        {% endfor %}
+      </div>
+    </div>
+  </aside>
+
+  <!-- HLAVNÍ OBSAH -->
+  <main class="content">
+    {{ content }}
+
+    <!-- giscus komentáře: když je chci vypnout u příspěvku, dát do front matter comments: false -->
+    {% if page.comments != false %} 
+    <script src="https://giscus.app/client.js"
+        data-repo="lenkapng/lenkapng.github.io"
+        data-repo-id="R_kgDOO5hgcg"
+        data-category="General"
+        data-category-id="DIC_kwDOO5hgcs4CrWLj"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="cs"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+{% endif %}
+
+  </main>
+
+</div>
+
+<!-- NEKO SKRIPTA -->
+<script>
+  NekoType = "blue";
+</script>
+<script src="https://webneko.net/n20171213.js"></script>
+
+</body>
+</html>
