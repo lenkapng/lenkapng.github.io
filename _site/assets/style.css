@@ -157,3 +157,15 @@ nav a {
   border: 1px solid #0000EE;
   /* background: #hex; */
 }
+
+p {
+  text-align: justify;
+}
+
+.subject-code {
+  color: #0000EE;
+  font-weight: 600;
+  display: inline-block;
+  width: 9ch; /* nastaví pevnou šířku, jako „tabulátor“ */
+  white-space: nowrap;
+}
