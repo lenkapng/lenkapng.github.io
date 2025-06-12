@@ -169,3 +169,24 @@ p {
   width: 9ch; /* nastaví pevnou šířku, jako „tabulátor“ */
   white-space: nowrap;
 }
+
+mark {
+  background: #E5E5FD
+}
+
+/* tagy pod článkem */
+
+.post-tags {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+.post-tags a {
+  color: #b6b6f9;
+  text-decoration: none;
+  margin-right: 0.3rem;
+}
+
+.post-tags a:hover {
+  text-decoration: underline;
+}
