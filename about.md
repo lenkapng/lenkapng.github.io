@@ -4,6 +4,12 @@ title: O mně
 permalink: /about/
 ---
 
+<style>
+.myDiv {
+  color: #b6b6f9;
+}
+</style>
+
 # O mně
 
 <p>Ahoj!</p>
@@ -32,4 +38,6 @@ Pokud nejsem ve škole, jsem na brigádě, na praxi, popř. ve vlaku směřujíc
 Kontaktovat mě lze skrze <a href="https://instagram.com/lenkajpg">Instagram</a>, <a href="https://www.facebook.com/leni.polednikova/">Facebook</a>, anebo, je-li libo, email – lenkapng@gmail.com.
 </p>
 
-<p><em>*Tento web byl vytvořen s pomocí umělé inteligence pro účely učení se html/css skrze průběžný <em>tinkering</em>. Momentálně proto funguje nejlépe v počítačovém zobrazení. Za případné chyby se omlouvám.</em></p>
+<br>
+
+<p style="color:grey; font-size:90%;"><em>*Kód webu byl vytvořen s pomocí umělé inteligence pro účely učení se html/css skrze průběžný tinkering. Momentálně proto funguje nejlépe v počítačovém zobrazení. Za případné chyby se omlouvám.</em></p>
