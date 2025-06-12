@@ -40,4 +40,17 @@ Kontaktovat mě lze skrze <a href="https://instagram.com/lenkajpg">Instagram</a>
 
 <br>
 
+### To-do list pro mě, aneb co vlastně čekat?
+<ul>
+  <li>Zpětný pohled na Jižní Koreu</li>
+  <li>Doplnit sem CVčko</li>
+  <li>Přesunout sem články z mého <a href="https://lenkapng.wixsite.com/portfolio">bakalářského portfolia</a></li>
+  <li>Doplnit ilustrace/obrázky k jednotlivým článkům</li>
+  <li>Knihy přečtené za rok 2025</li>
+  <li>Reflexe některých předmětů</li>
+  <li>Zvyknout si mapovat své učení a kreativní činnost skrze text</li>
+</ul>
+
+<br>
+
 <p style="color:grey; font-size:90%;"><em>*Kód webu byl vytvořen s pomocí umělé inteligence pro účely učení se html/css skrze průběžný tinkering. Momentálně proto funguje nejlépe v počítačovém zobrazení. Za případné chyby se omlouvám.</em></p>
