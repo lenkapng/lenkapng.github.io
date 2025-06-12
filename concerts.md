@@ -101,5 +101,5 @@ permalink: /concerts/
     <tr><td data-label="datum">22/02/25</td><td data-label="☆☆☆">Gracie Abrams</td><td data-label="místo">Velodrom, Berlin</td></tr>
     <tr><td data-label="datum">13/03/25</td><td data-label="☆☆☆">Bilk</td><td data-label="místo">Café V lese, Praha</td></tr>
     <tr><td data-label="datum">27/03/25</td><td data-label="☆☆☆">Anna Vaverková</td><td data-label="místo">Palác Akropolis, Praha</td></tr>
-    <tr><td data-label="datum">04/04/25</td><td data-label="☆☆☆">Dukla + whyohwhy</td><td data-label="místo">Kabinet Múz, Brno</td></tr>
+    <tr><td data-label="datum">11/04/25</td><td data-label="☆☆☆">Berlin Manson</td><td data-label="místo">Archa, Praha</td></tr>
     <tr><td data-label="datum">19/06/25</td><td data-label="☆☆☆">Lucy Dacus + jasmine.4.t</td><td data-label="místo">Astra, Berlin</td></tr>
